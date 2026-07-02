@@ -341,7 +341,7 @@ function PainelPastor({data,setData,distritoId}){
   const rank = igrejas.map(ig=>({nome:ig.nome, tipo:tipoDe(ig), bat:batCells(data,new Set([ig.id])).filter(b=>vgMes==="Todos"||b.m===Number(vgMes)).reduce((a,b)=>a+bapt(b),0), est:data.formularios.filter(f=>f.igrejaId===ig.id&&(vgMes==="Todos"||f.mes===Number(vgMes))).reduce((a,f)=>a+estudosTotal(f),0)})).sort((a,b)=>b.bat-a.bat||b.est-a.est);
   const abas=[{id:"painel",label:"Visão geral",icon:TrendingUp},{id:"ranking",label:"Ranking",icon:BarChart3},{id:"preenchimento",label:"Preenchimentos",icon:ClipboardList},{id:"premiacao",label:"Premiação",icon:Gift}];
 
-  function copiar(ig){ const link=`crm200.app/forms/${distritoId}/${ig.id}?m=${new Date().getMonth()+1}&y=${new Date().getFullYear()}`; try{navigator.clipboard?.writeText(link);}catch(e){} setCopiado(ig.id); setTimeout(()=>setCopiado(null),1600); }
+  function copiar(ig){ const link=`https://projeto200crm.netlify.app/forms/${distritoId}/${ig.id}?m=${new Date().getMonth()+1}&y=${new Date().getFullYear()}`; try{nav
   function salvarPrev(camp,campo,val){ setData(d=>({...d,previsoes:d.previsoes.map(p=>p.distritoId===distritoId&&p.campanha===camp?{...p,[campo]:val}:p)})); }
 
   return (
