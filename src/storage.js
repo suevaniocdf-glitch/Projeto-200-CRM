@@ -1,8 +1,10 @@
-// src/storage.ts
+// src/storage.js
 export const load = () => {
-  return null;
+  const data = localStorage.getItem("crm_data");
+  return data ? JSON.parse(data) : null;
 };
 
 export const persist = (data) => {
-  console.log("Persistindo dados:", data); 
+  localStorage.setItem("crm_data", JSON.stringify(data));
 };
+
