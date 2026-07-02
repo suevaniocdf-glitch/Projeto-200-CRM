@@ -6,7 +6,8 @@ import {
   Crown, Map, UserCog, ClipboardList, Target, Droplets, BookOpen, Trophy,
   Bell, Link2, Plus, Check, TrendingUp, Building2, Send, Info, Wrench, UserPlus, SlidersHorizontal, BarChart3, Gift, Shuffle,
 } from "lucide-react";
-import { load, persist } from "./storage";
+
+
 
 /* === Dados reais importados do ACMS (perÃ­odo 1/2026â€“6/2026) === */
 
