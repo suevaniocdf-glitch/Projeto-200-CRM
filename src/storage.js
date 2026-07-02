@@ -4,5 +4,5 @@ export const load = () => {
 };
 
 export const persist = (data: any) => {
-  console.log("Persistindo dados:", data);
+  console.log("Persistindo dados:", data); 
 };
