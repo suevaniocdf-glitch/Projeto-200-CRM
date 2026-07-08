@@ -11,8 +11,9 @@ import { load, persist } from "./storage.js";
 /* === Dados reais importados do ACMS (período 1/2026–6/2026) === */
 
 // === Chaves Reais do seu Firebase Injetadas ===
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDwE1hRVwj-44nGDHXyk1vLcn9Y_Py4Oso",
+  apiKey: "AIzaSyDwE1hRVWj-44nGDHXyk1vLcn9Y_Py4Oso",
   authDomain: "projeto-200-crm.firebaseapp.com",
   projectId: "projeto-200-crm",
   storageBucket: "projeto-200-crm.firebasestorage.app",
